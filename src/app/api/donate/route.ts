@@ -69,7 +69,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const connection = new Connection(clusterApiUrl("mainnet-beta"), "confirmed"); // Create a connection to the mainnet-beta cluster
+  const connection = new Connection(clusterApiUrl("devnet"), "confirmed"); // Create a connection to the mainnet-beta cluster
 
   const transaction = new Transaction().add(
     SystemProgram.transfer({
